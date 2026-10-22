@@ -1,0 +1,51 @@
+/* ==========================================================================
+   VRINDAVAN ECO FARMS — DESIGN TOKENS & VARIABLES (css/variables.css)
+   ========================================================================== */
+
+:root {
+  /* 1. Brand Color Palette (Organic Eco-Luxury & Brochure Tones) */
+  --bg-sage-cream: #F4F7F1;         /* Primary soft pastel sage-ivory background */
+  --bg-mint-mist: #E6F0E2;          /* Alternate section botanical wash */
+  --bg-card-surface: #FFFFFF;       /* Crisp card surface */
+  
+  --color-emerald-deep: #0F4C29;    /* Primary deep forest green brand color */
+  --color-emerald-mid: #1B663B;     /* Secondary forest accent */
+  --color-canopy-dark: #072814;     /* Deepest dark green for immersion sections & footer */
+  
+  --color-terracotta: #B85D38;      /* Warm earthy terracotta for primary CTA buttons */
+  --color-terracotta-hover: #9E4B29;/* Darker terracotta on hover */
+  
+  --color-ochre-gold: #C69C53;      /* Warm sun-gold for borders, badges & Hindi highlights */
+  --color-ochre-light: #F5EBD6;     /* Soft gold tint for callout backgrounds */
+
+  /* 2. Typography Colors */
+  --text-charcoal: #1C2720;         /* Main body text (high contrast) */
+  --text-muted: #4A5D50;            /* Secondary body copy */
+  --text-light: #F4F7F1;            /* Light text on dark green backgrounds */
+  --text-gold-accent: #E2B86B;      /* Gold text accent on dark backgrounds */
+
+  /* 3. Bilingual Font Families */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hindi: 'Noto Serif Devanagari', 'Plus Jakarta Sans', serif;
+
+  /* 4. Layout & Spacing Tokens */
+  --container-max-width: 1240px;
+  --section-padding-y: 5.5rem;
+  --header-height: 82px;
+
+  /* 5. Borders, Corners & Elevation Shadows */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-arch: 180px 180px 20px 20px;
+  --radius-pill: 9999px;
+
+  --shadow-soft: 0 10px 30px -5px rgba(15, 76, 41, 0.08);
+  --shadow-card: 0 16px 36px -8px rgba(7, 40, 20, 0.12);
+  --shadow-floating: 0 24px 48px -12px rgba(7, 40, 20, 0.25);
+
+  /* 6. Smooth Animation Transitions */
+  --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
