@@ -1,0 +1,202 @@
+/* ==========================================================================
+   VRINDAVAN ECO FARMS — TABLET & MOBILE RESPONSIVENESS (css/responsive.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TABLET SCREENS (Max Width: 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  :root {
+    --section-padding-y: 4.25rem;
+  }
+
+  .editorial-grid,
+  .location-split-grid,
+  .footer-conversion-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .arched-image-frame {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .floating-quote-badge {
+    left: 1rem;
+  }
+
+  .usp-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tilted-renders-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .render-card.tilt-left,
+  .render-card.tilt-center,
+  .render-card.tilt-right {
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE PHONES (Max Width: 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  :root {
+    --section-padding-y: 3.5rem;
+    --header-height: 70px;
+  }
+
+  /* Add bottom space so the sticky mobile call/WhatsApp bar never covers footer text */
+  body {
+    padding-bottom: 64px;
+  }
+
+  /* Navigation & Hamburger Menu */
+  .desktop-nav,
+  .nav-actions .btn-primary {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  .mobile-nav-drawer {
+    display: block;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-sage-cream);
+    box-shadow: var(--shadow-floating);
+    border-bottom: 2px solid var(--color-ochre-gold);
+    padding: 1.5rem;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-smooth);
+    z-index: 999;
+  }
+
+  .mobile-nav-drawer.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mobile-link {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-emerald-deep);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(15, 76, 41, 0.08);
+  }
+
+  .mobile-cta-link {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-section {
+    min-height: auto;
+    padding: calc(var(--header-height) + 2.5rem) 0 3.5rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  /* Stack Grids into Single Column on Mobile */
+  .metrics-grid,
+  .usp-cards-grid,
+  .amenities-grid,
+  .tilted-renders-showcase {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .intro-highlight-banner {
+    padding: 1.35rem 1.4rem;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .advisory-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .lead-form-card {
+    padding: 1.65rem 1.35rem;
+  }
+
+  .footer-contact-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Persistent Bottom Mobile Action Bar */
+  .mobile-sticky-bar {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: var(--color-canopy-dark);
+    border-top: 2px solid var(--color-ochre-gold);
+    z-index: 1500;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+  }
+
+  .mobile-action-btn.call-btn {
+    background: var(--color-emerald-deep);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .mobile-action-btn.whatsapp-btn {
+    background: var(--color-terracotta);
+  }
+}
