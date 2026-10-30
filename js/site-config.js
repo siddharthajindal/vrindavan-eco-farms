@@ -13,14 +13,14 @@
 const SITE_CONFIG = {
   // 1. Brand & Contact Details
   brandName: "Vrindavan Eco Farms",
-  whatsappNumber: "919999999999", // Enter 10-digit WhatsApp number with 91 country code (no spaces or +)
+  whatsappNumber: "919926465656", // Enter 10-digit WhatsApp number with 91 country code (no spaces or +)
   displayPhones: [
-    "+91 99999-99999",
-    "+91 88888-88888"
+    "+91 9926465656",
+    "+91 9479435729"
   ],
 
   // 2. Location & Navigation Links
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Indore+Omkareshwar+Highway",
+  googleMapsUrl: "https://maps.app.goo.gl/wNGQbUBuNY9ZCic66",
 
   // 3. Local Image Asset Paths (100% Local — Zero External Links)
   images: {
